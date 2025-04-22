@@ -1,0 +1,150 @@
+/* Reset & Base */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Top Bar */
+.topbar {
+  background-color: #2E0066;
+  padding: 8px 20px;
+  text-align: right;
+}
+.app-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6600FF;
+  padding: 12px 20px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-buttons button {
+  margin-left: 12px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.btn-outline {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.2);
+}
+.btn-signup {
+  background-color: #28a745;
+  color: white;
+}
+.btn-signup:hover {
+  background-color: #218838;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Plans Grid */
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px 80px;
+}
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px 16px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.rating {
+  font-size: 16px;
+  color: #ffb400;
+  margin-bottom: 12px;
+}
+.desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+/* Màu nền theo loại gói */
+.card.basic { background-color: #42A5F5; color: white; }
+.card.advanced { background-color: #EF6C00; color: white; }
+.card.enterprise { background-color: #8E24AA; color: white; }
+
+.btn-register {
+  background-color: #FFC107;
+  color: #333;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-register:hover {
+  opacity: 0.85;
+}

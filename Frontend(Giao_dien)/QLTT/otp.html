@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xác Thực Tài Khoản</title>
+  <link rel="stylesheet" href="css/otp.css"/>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <span class="app-title">QUẢN LÝ THANH TOÁN</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CMC UNIVERSITY</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="services.html">Dịch Vụ</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <button class="btn-outline" onclick="location.href='login.html'">Đăng Nhập</button>
+      <button class="btn-signup" onclick="location.href='register.html'">Đăng Ký</button>
+    </div>
+  </header>
+
+  <!-- OTP Form -->
+  <div class="otp-wrapper">
+    <div class="otp-container">
+      <h2>Xác thực tài khoản</h2>
+      <form id="otpForm">
+        <div class="form-group">
+          <label for="otp">Nhập mã OTP</label>
+          <input type="text" id="otp" name="otp" placeholder="Nhập mã OTP" maxlength="6" required />
+        </div>
+        <button type="submit" class="btn-otp">Xác nhận</button>
+      </form>
+      <p class="note">
+        <a href="register.html">Quay lại đăng ký</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

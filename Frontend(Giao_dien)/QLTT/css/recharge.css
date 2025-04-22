@@ -1,0 +1,163 @@
+/* Reset & base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Topbar */
+.topbar {
+  position: fixed; top: 0; left: 0; width: 100%; height: 60px;
+  background-color: #3366FF;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; z-index: 1000;
+}
+.topbar__logo img { height: 40px; }
+.topbar__user {
+  color: white; font-size: 16px; font-weight: 500; cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed; top: 60px; left: 0; width: 220px; bottom: 0;
+  background-color: #2F3E5E; padding-top: 20px;
+}
+.sidebar ul { list-style: none; }
+.sidebar li { margin-bottom: 16px; }
+.sidebar a {
+  display: flex; align-items: center;
+  color: white; text-decoration: none; padding: 8px 20px;
+  font-size: 15px; border-radius: 4px;
+}
+.sidebar li.active a,
+.sidebar a:hover {
+  background-color: #3F5178;
+}
+.sidebar i { margin-right: 8px; }
+
+/* Main content */
+.main-content {
+  margin-top: 60px; margin-left: 220px;
+  padding: 30px; min-height: calc(100vh - 60px);
+}
+.back-link {
+  display: inline-block; margin-bottom: 16px;
+  color: #3366FF; text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
+
+/* Payment container */
+.payment-container {
+  display: flex; gap: 24px;
+}
+
+/* Order Info */
+.order-info {
+  background: #eef1fb;
+  border-radius: 8px;
+  padding: 24px;
+  width: 360px;
+}
+.order-info .vnpay-logo {
+  display: block; margin: 0 auto 16px;
+  height: 40px;
+}
+.order-info h2 {
+  font-size: 20px; margin-bottom: 16px;
+  text-align: center;
+}
+.order-info .field {
+  margin-bottom: 12px;
+}
+.order-info .label {
+  display: block; font-size: 14px; color: #666;
+}
+.order-info .value {
+  font-size: 16px; font-weight: 500;
+}
+.order-info .large {
+  font-size: 24px; font-weight: bold; color: #3366FF;
+}
+
+/* Payment Form */
+.payment-form {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  flex: 1;
+}
+.form-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+}
+.form-header h2 {
+  font-size: 20px; font-weight: 500;
+}
+.countdown {
+  font-size: 14px; color: #666;
+}
+.timer b {
+  display: inline-block; background: #333; color: white;
+  padding: 4px 8px; border-radius: 4px; margin: 0 4px;
+}
+
+/* Tabs */
+.tab-nav {
+  display: flex; border-bottom: 2px solid #ccc; margin-bottom: 16px;
+}
+.tab {
+  background: none; border: none;
+  padding: 8px 16px; cursor: pointer; font-size: 14px;
+  color: #666; border-bottom: 2px solid transparent;
+}
+.tab.active {
+  color: #3366FF; border-color: #3366FF;
+}
+
+/* Form Groups */
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-group label {
+  display: block; margin-bottom: 6px; font-size: 14px;
+}
+.input-icon {
+  position: relative;
+}
+.input-icon input {
+  width: 100%; padding: 10px; padding-right: 48px;
+  border: 1px solid #ccc; border-radius: 4px;
+}
+.input-icon img {
+  position: absolute; top: 50%; right: 12px; transform: translateY(-50%);
+  height: 24px;
+}
+
+/* Promo & terms */
+.promo .btn-promo {
+  background: #eef1fb; border: 1px solid #ccc;
+  padding: 8px 12px; border-radius: 4px; cursor: pointer;
+}
+.terms {
+  display: inline-block; margin-bottom: 16px;
+  font-size: 14px; color: #3366FF; text-decoration: none;
+}
+.terms:hover { text-decoration: underline; }
+
+/* Actions */
+.actions {
+  display: flex; justify-content: flex-end; gap: 12px;
+}
+.btn {
+  padding: 10px 20px; font-size: 14px; border: none;
+  border-radius: 4px; cursor: pointer;
+}
+.btn--cancel {
+  background: #f0f0f0; color: #333;
+}
+.btn--cancel:hover { opacity: 0.9; }
+.btn--confirm {
+  background: #3366FF; color: white;
+}
+.btn--confirm:hover { opacity: 0.9; }

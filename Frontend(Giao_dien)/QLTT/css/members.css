@@ -1,0 +1,114 @@
+/* Reset & base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Topbar */
+.topbar {
+  position: fixed; top: 0; left: 0; width: 100%; height: 60px;
+  background-color: #3366FF;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; z-index: 1000;
+}
+.topbar__logo img { height: 40px; }
+.topbar__user {
+  color: white; font-size: 16px; font-weight: 500; cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed; top: 60px; left: 0; width: 220px; bottom: 0;
+  background-color: #2F3E5E; padding-top: 20px;
+}
+.sidebar ul { list-style: none; }
+.sidebar li { margin-bottom: 16px; }
+.sidebar a {
+  display: flex; align-items: center;
+  color: white; text-decoration: none; padding: 8px 20px;
+  font-size: 15px; border-radius: 4px;
+}
+.sidebar li.active a,
+.sidebar a:hover {
+  background-color: #3F5178;
+}
+.sidebar i {
+  margin-right: 8px;
+  /* bạn có thể dùng font-icon hoặc emoji */
+}
+.icon-home::before    { content: "🏠"; }
+.icon-wallet::before  { content: "💰"; }
+.icon-box::before     { content: "📦"; }
+.icon-history::before { content: "🔄"; }
+.icon-user::before    { content: "👤"; }
+.icon-users::before   { content: "👥"; }
+
+/* Main content */
+.main-content {
+  margin-top: 60px; margin-left: 220px;
+  padding: 30px; min-height: calc(100vh - 60px);
+}
+.main-content h1 {
+  font-size: 24px; margin-bottom: 24px; font-weight: 600;
+}
+
+/* Search group */
+.search-group {
+  margin-bottom: 24px;
+}
+.search-group label {
+  display: block; margin-bottom: 8px; font-size: 14px;
+}
+.search-row {
+  display: flex; gap: 12px;
+}
+.search-row input {
+  flex: 1; padding: 8px 12px; font-size: 14px;
+  border: 1px solid #ccc; border-radius: 4px;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  background: white; border-radius: 8px;
+  overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+table {
+  width: 100%; border-collapse: collapse;
+}
+thead th {
+  background-color: #e9eef8; color: #333;
+  text-align: left; padding: 12px 16px; font-weight: 500;
+  font-size: 14px;
+}
+tbody tr td {
+  padding: 12px 16px; border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+tbody tr:last-child td { border-bottom: none; }
+
+/* Buttons chung */
+.btn {
+  display: inline-block; font-size: 14px; cursor: pointer;
+  border: none; border-radius: 4px; padding: 8px 16px;
+  transition: opacity .2s;
+}
+
+/* Màu nút */
+.btn--green {
+  background-color: #28a745; color: white;
+}
+.btn--green:hover { opacity: .9; }
+
+.btn--remove {
+  background-color: #dc3545; color: white;
+}
+.btn--remove:hover { opacity: .9; }
+
+.btn--add {
+  background-color: #6c757d; color: white;
+  padding: 10px 20px; font-size: 15px;
+}
+.btn--add:hover { opacity: .9; }
