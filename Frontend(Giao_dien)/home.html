@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center flex-column">
+  <div class="main-content-area">
+    <div class="container p-0 d-flex-column">
+
+      <!-- NAVBAR -->
+      <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.png" alt="Logo" style="max-width: 80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#hero">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Liên hệ</a>
+                </li>
+              </ul>
+              <div class="nav-btn d-flex gap-3">
+                <button class="sign-in-btn">Đăng nhập</button>
+                <button class="sign-up-btn">Đăng Ký</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- TRANG CHỦ -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Quản Lý Tài Khoản Dễ Dàng</h1>
+          <h2>Nạp Tiền Online</h2>
+          <p>Nền tảng quản lý tài khoản toàn diện với bảo mật hàng đầu và phương thức nạp tiền đa dạng.</p>
+          <button class="btn btn-accent">Tìm hiểu thêm</button>
+        </div>
+        <div class="hero-image">
+          <img src="image/banner-1.png" alt="Quản lý tài khoản">
+        </div>
+      </section>
+
+      <!-- DỊCH VỤ -->
+      <section id="services" class="services-section container">
+        <h2 class="section-title text-center mb-5">Các gói dịch vụ</h2>
+        <div class="row service-cards-container">
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="service-card card h-100">
+              <div class="card-header basic-header text-center">
+                Cơ bản
+              </div>
+              <div class="card-body">
+                <p class="card-text">Các tính năng giới hạn bạn sẽ nhận được trong gói này.</p>
+                <ul class="service-features list-unstyled">
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Quản lý 1 tài khoản người dùng.
+                  </li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Lịch sử giao dịch cơ bản.</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Thông báo cơ bản về tài khoản.
+                  </li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Hỗ trợ khách hàng qua email.</li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-basic-buy w-100">Mua ngay</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="service-card card h-100">
+              <div class="card-header expanded-header text-center">
+                Mở rộng
+              </div>
+              <div class="card-body">
+                <p class="card-text">Một vài tính năng khác bạn sẽ nhận được trong gói này.</p>
+                <ul class="service-features list-unstyled">
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Quản lý tối đa 5 tài khoản người
+                    dùng.</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Lịch sử giao dịch đầy đủ (tìm
+                    kiếm, lọc theo thời gian).</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Thông báo nâng cao (tùy chỉnh
+                    thông báo).</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Hỗ trợ khách hàng ưu tiên qua
+                    email và chat trực tuyến.</li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-expanded-buy w-100">Mua ngay</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="service-card card h-100">
+              <div class="card-header premium-header text-center">
+                Nâng cao
+              </div>
+              <div class="card-body">
+                <p class="card-text">Tất cả các tính năng bạn sẽ nhận được trong gói này.</p>
+                <ul class="service-features list-unstyled">
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Quản lý không giới hạn tài khoản
+                    người dùng.</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Lịch sử giao dịch toàn diện với
+                    báo cáo chi tiết.</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Thông báo tùy chỉnh chuyên sâu và
+                    cảnh báo đặc biệt.</li>
+                  <div class="divider"></div>
+                  <li class="service-description"><i class="fas fa-check-circle"></i> Hỗ trợ khách hàng VIP 24/7 qua
+                    email, chat và điện thoại.</li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <button class="btn btn-premium-buy w-100">Mua ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GIỚI THIỆU -->
+      <section id="about" class="about-section p-2">
+        <div class="about-image">
+          <img src="image/banner-2.png" alt="">
+        </div>
+
+        <div class="about-content">
+          <h1 class="about-title">Giới thiệu về chúng tôi</h1>
+          <p>Chào mừng bạn đến với nền tảng quản lý tài khoản trực tuyến được thiết kế để mang đến sự an toàn và tiện
+            lợi tối đa. Chúng tôi cung cấp một quy trình đăng ký tài khoản đơn giản và nhanh chóng, kết hợp với cơ chế
+            xác thực bằng token tiên tiến, đảm bảo mọi thông tin và giao dịch của bạn đều được bảo vệ một cách tối ưu...
+          </p>
+          <button class="btn read-more-btn">Đọc thêm</button>
+        </div>
+      </section>
+
+      <!-- LIÊN HỆ -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h1 class="mb-5 text-center">Liên hệ với chúng tôi</h1>
+              <form class="contact-form row g-3">
+                <div class="col-md-6">
+                  <label for="ho" class="form-label">Họ*</label>
+                  <input type="text" class="form-control" id="ho" placeholder="Nhập họ...">
+                </div>
+                <div class="col-md-6">
+                  <label for="ten" class="form-label">Tên*</label>
+                  <input type="text" class="form-control" id="ten" placeholder="Nhập tên...">
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="Nhập email...">
+                </div>
+                <div class="col-12">
+                  <label for="sdt" class="form-label">Số điện thoại*</label>
+                  <input type="tel" class="form-control" id="sdt" placeholder="Nhập số điện thoại...">
+                </div>
+                <div class="col-12">
+                  <label for="mota" class="form-label">Nhập mô tả của bạn*</label>
+                  <textarea class="form-control" id="mota" rows="4" placeholder="Nhập mô tả..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn contact-btn">Gửi</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Số 25, ngõ 24 Hoàng Quốc Việt, Hà Nội</p>
+        <p><i class="fas fa-phone-alt"></i> +84 336941903</p>
+        <p><i class="fas fa-envelope"></i> abc@gmail.com</p>
+      </div>
+      <div class="about-us">
+        <h4>Về chúng tôi</h4>
+        <p>Nền tảng quản lý tài khoản thông minh, giúp bạn dễ dàng kiểm soát và duy trì tài chính trực tuyến.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
