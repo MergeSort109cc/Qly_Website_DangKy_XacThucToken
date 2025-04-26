@@ -57,7 +57,7 @@ img {
 }
 
 section {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
 }
