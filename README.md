@@ -6,3 +6,6 @@ https://www.figma.com/design/VbCA7lcYQwUzLDfhZVnfpt/Untitled?node-id=0-1&p=f&t=x
 
 //link web demo
 https://my-spring-boot-app-spx8.onrender.com
+
+//link giao diện bảng điểu khiển(DASHBOARD)
+https://mergesort109cc.github.io/dashboard/home.html
