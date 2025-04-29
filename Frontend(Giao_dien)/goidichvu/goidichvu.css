@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f7f6; /* Light background */
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #7689cc;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-left {
+    display: flex;
+    align-items: center;
+  
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 130px;
+   
+}
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px; /* Khoảng đệm cho nút */
+    display: flex; /* Căn icon vào giữa */
+    align-items: center;
+    justify-content: center;
+   margin-left: 5px;
+   
+   
+}
+.sidebar-toggle:hover {
+    opacity: 0.8;
+}
+
+.user-info {
+    font-size: 16px;
+    cursor: pointer;
+    /* Basic styling for dropdown icon placeholder */
+}
+
+.user-info i {
+    margin-left: 5px;
+    font-size: 14px; /* Adjust icon size */
+}
+
+/* Main Wrapper (Sidebar + Content) */
+.main-wrapper {
+    display: flex;
+    flex: 1; /* Allow main-wrapper to take available space */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px; /* Fixed width */
+    background-color: #323d59;
+    color: #abb1b8; /* Light grey text */
+    padding-top: 20px;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+
+.sidebar .menu ul {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin-bottom: 5px;
+}
+
+.sidebar .menu a {
+    display: block;
+    color: #abb1b8;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .menu a:hover {
+    background-color: #5a6273; /* Slightly lighter on hover */
+    color: white;
+}
+
+.sidebar .menu li.active a {
+    background-color: #5a6273; /* Active item background */
+    color: white;
+    border-left: 4px solid #5cb85c; /* Green indicator */
+    padding-left: 16px; /* Adjust padding due to border */
+}
+
+.sidebar .menu a i {
+    margin-right: 10px;
+    width: 20px; 
+    
+}
+
+
+/* --- Trạng thái khi sidebar được thu gọn --- */
+/* Các quy tắc này được áp dụng khi body có class 'sidebar-collapsed' */
+body.sidebar-collapsed .sidebar {
+    width: 70px; /* Sidebar thu gọn còn 70px (hoặc kích thước bạn đặt) */
+}
+
+body.sidebar-collapsed .sidebar .menu a {
+    padding: 12px; /* Điều chỉnh padding khi chỉ có icon */
+    justify-content: center; /* Căn nội dung (icon) vào giữa */
+    
+}
+
+body.sidebar-collapsed .sidebar .menu a i {
+    /* ... các style khác cho icon ... */
+    margin-right: 0; /* Loại bỏ khoảng cách giữa icon và text */
+}
+/* Content Area */
+.content {
+    flex: 1; /* Allow content to take remaining space */
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+    margin: 20px; /* Add some margin around the content block */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-nap-tien {
+    background-color: #5cb85c; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nap-tien:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Table Styling */
+.service-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px;
+}
+
+.service-table thead tr {
+    background-color: #7689cc; 
+    color: #fff;
+    text-align: left;
+}
+
+.service-table th,
+.service-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd; /* Light grey border */
+}
+
+.service-table tbody tr:last-child td {
+    border-bottom: none; /* No border on the last row */
+}
+
+/* Optional: Hover effect on rows */
+/* .service-table tbody tr:hover {
+    background-color: #f5f5f5;
+} */
+
+.service-table td.actions {
+    white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+/* Action Buttons in Table */
+.btn-action {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; /* Space between buttons */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:last-child {
+    margin-right: 0; /* No margin on the last button */
+}
+
+.btn-buy {
+    background-color: #5cb85c; /* Green */
+    color: white;
+}
+
+.btn-buy:hover {
+    background-color: #4cae4c; /* Darker green */
+}
+
+.btn-vnpay {
+    background-color: #7689cc; /* Blue */
+    color: white;
+}
+
+.btn-vnpay:hover {
+    background-color: #025aa5; /* Darker blue */
+}
+
+/* Basic responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column; /* Stack sidebar and content on smaller screens */
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .sidebar .menu ul {
+        display: flex; /* Arrange menu items horizontally */
+        overflow-x: auto; /* Add scroll if items overflow */
+        padding: 10px 0;
+    }
+
+     .sidebar .menu li {
+        flex: 1; /* Distribute space */
+        text-align: center;
+        margin-bottom: 0;
+     }
+
+     .sidebar .menu a {
+         padding: 10px 5px; /* Adjust padding */
+     }
+
+     .sidebar .menu li.active a {
+         border-left: none; /* Remove left border */
+         border-bottom: 2px solid #5cb85c; /* Add bottom border */
+         padding-left: 5px; /* Adjust padding */
+         padding-bottom: 8px;
+     }
+
+    .content {
+        margin: 10px; /* Adjust margin */
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-header h1 {
+        margin-bottom: 10px;
+    }
+
+    .service-table th,
+    .service-table td {
+        padding: 8px 10px; /* Adjust padding */
+    }
+
+    .btn-action {
+        display: block; /* Stack buttons in actions column */
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px; /* Space between stacked buttons */
+        text-align: center;
+    }
+    .btn-action:last-child {
+        margin-bottom: 0;
+    }
+}

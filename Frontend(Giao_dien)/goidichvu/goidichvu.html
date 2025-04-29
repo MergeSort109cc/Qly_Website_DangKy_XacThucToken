@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="goidichvu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">LOGO</div>
+                
+            </div>
+         
+            <div class="user-info">
+                <span>User's Name</span>
+                <i class="fas fa-caret-down"></i> </div>
+        </header>
+
+        <div class="main-wrapper">
+            <aside class="sidebar">
+                <nav class="menu">
+                    <ul>
+                        <button class="sidebar-toggle" id="sidebarToggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                        <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Nạp tiền</a></li>
+                        <li class="active"><a href="#"><i class="fa-solid fa-box"></i>Gói dịch vụ</a></li>
+                        <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Lịch sử giao dịch</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>Thông tin cá nhân</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="content">
+                <div class="content-header">
+                    <h1>Gói dịch vụ chưa mua</h1>
+                    <button class="btn-nap-tien">Nạp tiền</button>
+                </div>
+
+                <table class="service-table">
+                    <thead>
+                        <tr>
+                            <th>Tên gói</th>
+                            <th>Mô tả</th>
+                            <th>Giá</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gói doanh nghiệp</td>
+                            <td>Gói dịch vụ cao cấp</td>
+                            <td>499.000 VNĐ</td>
+                            <td class="actions">
+                                <button class="btn-action btn-buy">Mua bằng số dư</button>
+                                <button class="btn-action btn-vnpay">Thanh toán bằng VNPay</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gói cơ bản</td>
+                            <td>Gói dịch vụ cơ bản</td>
+                            <td>99.000 VNĐ</td>
+                            <td class="actions">
+                                <button class="btn-action btn-buy">Mua bằng số dư</button>
+                                <button class="btn-action btn-vnpay">Thanh toán bằng VNPay</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gói nâng cao</td>
+                            <td>Gói nâng cao với nhiều tính năng hơn</td>
+                            <td>299.000 VNĐ</td>
+                            <td class="actions">
+                                <button class="btn-action btn-buy">Mua bằng số dư</button>
+                                <button class="btn-action btn-vnpay">Thanh toán bằng VNPay</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
