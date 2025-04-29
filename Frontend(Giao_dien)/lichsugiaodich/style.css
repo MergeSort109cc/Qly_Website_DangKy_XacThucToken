@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #678dd1;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .user-dropdown {
+    position: relative;
+  }
+  
+  .user-dropdown button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #243a5e;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 48px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 15px 20px;
+  }
+  
+  .sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* tạo khoảng cách giữa icon và chữ */
+  }
+  
+  .sidebar li.active,
+  .sidebar li:hover {
+    background-color: #1a2b47;
+  }
+  
+  .sidebar i {
+    width: 20px;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background-color: #1a2b47;
+  }
+  
+  .content {
+    margin-left: 210px;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+    /* Màu nền header bảng giống hình */
+    table thead {
+        background-color: #5c6bc0; /* tím đậm */
+        color: white;
+    }
+    
+    table th {
+        padding: 12px;
+    }
+    
+    /* Hiển thị dòng "chưa có lịch sử" */
+    .no-data {
+        text-align: center;
+        font-style: italic;
+        color: #777;
+    }
+    
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .no-data {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 15px;
+}
+
+  button.export {
+    padding: 5px 10px;
+    background-color: #0ba360;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
