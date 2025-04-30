@@ -24,3 +24,21 @@ function colorLink(){
 }
 
 linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+/*==================== EYE ICON ====================*/
+const eyeIcon = document.querySelectorAll(".fa-eye");
+    
+    eyeIcon.forEach(icon => {
+      icon.addEventListener("click", () => {
+        const input = icon.previousElementSibling;
+
+        icon.classList.toggle("fa-eye-slash");
+        
+        if(icon.classList.contains("fa-eye-slash")) {
+          input.type = "text";
+        } else {
+          input.type = "password";
+        }
+
+      });
+    });

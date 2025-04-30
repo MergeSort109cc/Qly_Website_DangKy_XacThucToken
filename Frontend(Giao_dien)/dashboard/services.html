@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+
+    <link rel="stylesheet" href="assets/css/styles.purged.css">
+
+    <title>Gói dịch vụ</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <div class="header__container">
+            <img src="assets/img/profile.png" alt="" class="header__img">
+
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+
+            <div class="header__search">
+                <input type="search" placeholder="Tìm kiếm..." class="header__input">
+                <i class='bx bx-search header__icon'></i>
+            </div>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <i class='bx bxs-disc nav__icon'></i>
+                    <span class="nav__logo-name">IMT</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Hồ sơ</h3>
+
+                        <a href="home.html" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Trang chủ</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Thông tin</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-time-five nav__icon'></i>
+                            <span class="nav__name">Lịch sử giao dịch</span>
+                        </a>
+
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Danh mục</h3>
+
+                        <!-- <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bell nav__icon'></i>
+                            <span class="nav__name">Thông báo</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-user-account nav__icon'></i>
+                            <span class="nav__name">Quản lý tài khoản</span>
+                        </a>
+
+                        <a href="services.html" class="nav__link active">
+                            <i class='bx bx-package nav__icon'></i>
+                            <span class="nav__name">Gói dịch vụ</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-dollar-circle nav__icon'></i>
+                            <span class="nav__name">Nạp tiền</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link nav__logout">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Đăng xuất</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main>
+        <section class="services-section">
+            <div class="content-header">
+                <h1>Gói dịch vụ chưa mua</h1>
+                <button class="btn-nap-tien">Nạp tiền</button>
+            </div>
+
+            <table class="service-table">
+                <thead>
+                    <tr>
+                        <th>Tên gói</th>
+                        <th>Mô tả</th>
+                        <th>Giá</th>
+                        <th>Phương thức thanh toán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gói nâng cao</td>
+                        <td>Gói nâng cao với toàn bộ tính năng</td>
+                        <td>499.000 VNĐ</td>
+                        <td class="actions">
+                            <button class="btn-action btn-buy">
+                                <i class='bx bx-dollar-circle'></i>
+                            </button>
+                            <button class="btn-action btn-vnpay">
+                                <img src="assets/img/vnpay.png" alt="" style="max-width: 22px;">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gói cơ bản</td>
+                        <td>Gói cơ bản với tính năng giới hạn</td>
+                        <td>99.000 VNĐ</td>
+                        <td class="actions">
+                            <button class="btn-action btn-buy">
+                                <i class='bx bx-dollar-circle'></i>
+                            </button>
+                            <button class="btn-action btn-vnpay">
+                                <img src="assets/img/vnpay.png" alt="" style="max-width: 22px;">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gói mở rộng</td>
+                        <td>Gói mở rộng với tính năng bổ sung</td>
+                        <td>299.000 VNĐ</td>
+                        <td class="actions">
+                            <button class="btn-action btn-buy">
+                                <i class='bx bx-dollar-circle'></i>
+                            </button>
+                            <button class="btn-action btn-vnpay">
+                                <img src="assets/img/vnpay.png" alt="" style="max-width: 22px;">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

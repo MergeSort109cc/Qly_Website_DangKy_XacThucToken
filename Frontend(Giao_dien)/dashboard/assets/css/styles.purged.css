@@ -130,7 +130,7 @@ img {
 }
 
 .header__toggle {
-  color: var(--title-color);
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -277,6 +277,199 @@ img {
 }
 
 /* CONTENT SECTION */
+
+
+/* DASHBOARD HOME */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section {
+  max-width: 2560px;
+  width: 100%;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard-card {
+  flex: 1 1 calc(50% - 20px);
+  /* 2 cột với khoảng cách */
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 924px;
+  height: 400px;
+  position: relative;
+}
+
+.package {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.package-content .bxs-user.in-use {
+  background-color: #10BCC3;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.package-content .bxs-user.expired {
+  background-color: #E8712F;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.package-title.advanced {
+  color: #10BCC3;
+  font-size: 1.3em;
+}
+
+.package-title.extend {
+  color: #E8712F;
+  font-size: 1.3em;
+}
+
+.expiry {
+  font-size: 14px;
+  color: #aeaeae;
+}
+
+.divider {
+  border-top: 1px solid #aeaeae;
+  margin: 20px 0;
+}
+
+.dashboard-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.recharge-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.fa-clock-rotate-left,
+.fa-bell {
+  font-size: 128px;
+  color: #aeaeae;
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.detailed-btn.red {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.detailed-btn.yellow {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.view-more {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive: Khi màn hình nhỏ thì chuyển thành cột */
+@media (max-width: 768px) {
+  .dashboard-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* DASHBOARD PROFILE */
+.profile-section {
+  max-width: 2560px;
+  width: 100%;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.profile-card.left {
+  max-width: 500px;
+  height: 300px;
+  border-top: 100px solid #6B8AD2;
+}
+
+.profile-card.right {
+  max-width: 1200px;
+  height: auto;
+}
+
+.profile-content {
+  position: absolute;
+  top: -50px;
+}
+
+.profile-img img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.fa-eye.form {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.update-profile-btn {
+  background-color: #0CAD55;
+  color: #fff;
+  transition: opacity .3s ease;
+}
+
+.update-profile-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .profile-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* DASHBOARD SERVICES*/
+.services-section {
+  max-width: 2560px;
+  width: 100%;
+}
 .content {
   flex: 1;
   /* Allow content to take remaining space */
